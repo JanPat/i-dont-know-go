@@ -3,7 +3,7 @@ import googlemaps
 from datetime import datetime
 import geopy.distance
 
-gmaps = googlemaps.Client(key='AIzaSyDp2Ewm4BhzD3pS3lNiwFpfkpy6h_Zuq6w')
+gmaps = googlemaps.Client(key='')
 
 def get_best_score(restaurants, restaurant_options):
     '''
