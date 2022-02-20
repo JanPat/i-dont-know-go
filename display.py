@@ -1,3 +1,6 @@
+"""
+This file contains a function to display text on the OLED
+"""
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
