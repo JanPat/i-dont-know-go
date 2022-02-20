@@ -176,30 +176,3 @@ def get_best_match(location, min_price, max_price, max_distance, method, max_dur
 
     return restaurant_selection
 
-
-# TESTING
-
-output_directions = get_directions(
-    location = (-73.6909461, 45.5206364), # MY CURRENT LOCATION ---> GPS
-    method = "driving", # SELECTION THING WITH BUTTONS
-    end_location = (-73.682869, 45.5139) # FROM get_best_match
-)
-
-print(output_directions)
-
-
-'''
-output = get_best_match(
-    location = (-73.6909461, 45.5206364), # MY CURRENT LOCATION ---> GPS
-    min_price = 1,
-    max_price = 4, # SELECTION THING WITH BUTTONS
-    max_distance = 100, # Closer distance is prioritized by API. Returns top 20.
-    method = "driving",# SELECTION THING WITH BUTTONS
-    max_duration = 8, # SELECTION THING WITH BUTTONS
-    min_rating = 4 # SELECTION THING WITH BUTTONS
-)
-
-print(output)
-
-print(len(output))
-'''
