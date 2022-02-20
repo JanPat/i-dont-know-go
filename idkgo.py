@@ -1,3 +1,13 @@
+"""
+Main program file for this project.
+Imports functions from maps.py to be able to use and manipulate data retrieved from the Google Maps API.
+
+Gets the user preferences by calling the selections() function.
+Then it uses this preferences to get the best match restaurant by calling get_best_match(), which has multiple filtering steps.
+Finally, once the target restaurant is selected by the program, step-by-step directions on how to arrive to that location are displayed on the OLED.
+"""
+
+
 import RPi.GPIO as GPIO
 import time
 
