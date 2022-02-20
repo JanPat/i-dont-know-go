@@ -1,3 +1,6 @@
+"""
+This file contains a function to get the coordinates from the GPS 
+"""
 import serial
 import time
 import string
