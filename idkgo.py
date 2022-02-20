@@ -134,7 +134,7 @@ while True:
     
     # Get dictionary of directions to the restaurant
     output_directions = get_directions(
-        location = (-73.6909461, 45.5206364), # FROM GPS (manual for now)
+        location = GPS.getCoordinates(), # FROM GPS 
         method = method, # FROM selections()
         end_location = output['location']
     )
