@@ -1,3 +1,9 @@
+"""
+Please note that the API key was removed from project files.
+
+This file contains functions used to send requests to the Google Maps API as well as functions that filter and manipulate the data retrieved from the API.
+"""
+
 import googlemaps
 
 from datetime import datetime
@@ -120,7 +126,6 @@ def get_directions(location, method, end_location):
         string_instructions = "".join([str(elem) for elem in list_instructions])
 
         # Add information to all_instructions dictionary
-
         all_instructions[str(i)] = {
             "instructions": string_instructions,
             "start_location": steps[i]['start_location'],
@@ -148,7 +153,6 @@ def get_best_match(location, min_price, max_price, max_distance, method, max_dur
     )['results']
 
     restaurant_options = {}
-
     count = 0
 
     for restaurant in searching_results:
